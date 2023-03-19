@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <div class="root">
+    <header class="header">
+      <div class="header__items">
+        <h1 class="header__logo">Todo</h1>
+        <img id="ligth" class="header__icon " src="./images/icon-moon.svg" alt="Icon moon">
+        <img id="dark" class="header__icon disabled" src="./images/icon-sun.svg" alt="Icon moon">
+      </div>
+      <form action="" id="todo-form" class="header__create-todos">
+        <div class="header__create-todos--radio"></div>
+        <input class="header__create-todos--text" id="todo-text" type="text" placeholder="Create nex todo...">
+        <p id="todo-btn" class="header__create-todos--icon">+</p>
+      </form>
+    </header>
+    <main class="main">
+      <ul id="todo-list" class="todos-all">
+         <!-- <li class="todo">
+          <div class="todo__options">
+            <div class="todo__radio" id="todo-radio"></div>
+            <img class="todo__check disabled" src="./images/icon-check.svg" alt="Icon check">
+            <p class="todo__text">Jog araound the park 3x jlksdbgadgda</p>
+          </div>
+          <img class="todo__icon-delete" src="./images/icon-cross.svg" alt="Icon delete.">
+        </li>  -->
+
+        
+          <div class="todos-options">
+          <p> <span id="todo-count">0</span> items left</p>
+          <p class="todos-options__clear"> Clear Completed</p>
+        </div> 
+        <section class="options">
+          <p id="all-todos" class="options__text active" >All</p>
+          <p id="todos-active" class="options__text">Active</p>
+          <p id="todos-completed" class="options__text">Completed</p>
+        </section>
+      </ul>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__tex">Drag and drop to reorder list</p>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

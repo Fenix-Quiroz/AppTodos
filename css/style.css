@@ -1,0 +1,271 @@
+/* Reseteo universal0 */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Fuente */
+.root {
+  font-size: 18px;
+  min-width: 375px;
+}
+
+body.dark .root {
+  background-color: hsl(235deg, 21%, 11%);
+  height: 100vh;
+}
+
+.header {
+  background-image: url("../images/bg-mobile-light.jpg");
+  background-size: cover;
+  padding: 45px 20px;
+  height: 200px;
+  min-width: 375;
+  transition: 0.3s ease-in-out;
+}
+body.dark .header {
+  background-image: url("../images/bg-mobile-dark.jpg");
+}
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  color: hsl(0deg, 0%, 98%);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 14px;
+  font-size: 1.3em;
+}
+.header__icon {
+  width: 20px;
+}
+.header__create-todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0deg, 0%, 98%);
+  margin-top: 30px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+body.dark .header__create-todos {
+  background-color: hsl(235deg, 24%, 19%);
+}
+.header__create-todos--text {
+  width: 100%;
+  padding-left: 30px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+body.dark .header__create-todos--text {
+  background-color: hsl(235deg, 24%, 19%);
+  color: hsl(234deg, 39%, 85%);
+}
+.header__create-todos--radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid hsl(233deg, 11%, 84%);
+  cursor: pointer;
+}
+body.dark .header__create-todos--radio {
+  background-color: hsl(235deg, 24%, 19%);
+  border: 1px solid hsl(233deg, 14%, 35%);
+}
+.header__create-todos--icon {
+  font-size: 1.6em;
+  color: hsl(280deg, 87%, 65%);
+  cursor: pointer;
+  background-color: hsl(235deg, 21%, 11%);
+  border-radius: 50%;
+  margin-right: 2px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.main {
+  background-color: hsl(0deg, 0%, 98%);
+}
+body.dark .main {
+  background-color: hsl(235deg, 21%, 11%);
+  width: 100%;
+}
+
+.todos-all {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  bottom: 30px;
+  background-color: hsl(0deg, 0%, 98%);
+  box-shadow: 0 10px 20px 0 hsl(233deg, 11%, 84%);
+  border-radius: 5px;
+}
+body.dark .todos-all {
+  background-color: hsl(235deg, 24%, 19%);
+  box-shadow: none;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid hsl(233deg, 11%, 84%);
+}
+body.dark .todo {
+  border-bottom: 1px solid hsl(233deg, 14%, 35%);
+}
+.todo__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.todo__radio {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 1px solid hsl(233deg, 11%, 84%);
+  cursor: pointer;
+}
+body.dark .todo__radio {
+  background-color: hsl(235deg, 24%, 19%);
+  border: 1px solid hsl(233deg, 14%, 35%);
+}
+.todo__check {
+  position: relative;
+  right: 26px;
+}
+.todo__text {
+  font-size: 14px;
+}
+body.dark .todo__text {
+  color: hsl(234deg, 39%, 85%);
+}
+.todo__icon-delete {
+  width: 13px;
+}
+
+.todos-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: hsl(234deg, 11%, 52%);
+}
+
+.options {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: hsl(0deg, 0%, 98%);
+  box-shadow: 0 0px 130px 0 hsl(233deg, 11%, 84%);
+  padding: 15px 0;
+  margin-top: -10px;
+  border-radius: 5px;
+  color: hsl(234deg, 11%, 52%);
+  font-size: 16px;
+  font-weight: 700;
+}
+body.dark .options {
+  background-color: hsl(235deg, 24%, 19%);
+  box-shadow: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(234deg, 11%, 52%);
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+body.dark .footer {
+  background-color: hsl(235deg, 21%, 11%);
+}
+
+.active {
+  color: hsl(220deg, 98%, 61%);
+}
+
+.disabled {
+  display: none;
+}
+
+@media only screen and (min-width: 1366px) {
+  body.dark .root {
+    background-color: hsl(235deg, 21%, 11%);
+    height: 100vh;
+  }
+  .header {
+    background-image: url("/images/bg-desktop-light.jpg");
+    padding: 70px 420px;
+    height: 250px;
+  }
+  body.dark .header {
+    background-image: url("/images/bg-desktop-dark.jpg");
+  }
+  .header__create-todos {
+    margin-top: 50px;
+  }
+  .header__icon {
+    cursor: pointer;
+  }
+  .todos-all {
+    width: 38%;
+  }
+  .todo {
+    cursor: pointer;
+  }
+  .todo__radio:hover {
+    background-image: linear-gradient(to bottom, hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
+  }
+  .todo__icon-delete:hover {
+    cursor: pointer;
+  }
+  .todos-options {
+    font-weight: 700;
+  }
+  .todos-options__clear:hover {
+    cursor: pointer;
+    color: hsl(235deg, 21%, 11%);
+  }
+  body.dark .todos-options__clear:hover {
+    color: hsl(234deg, 39%, 85%);
+  }
+  .options {
+    width: 0;
+    position: absolute;
+    left: 240px;
+    bottom: 0;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-bottom: 0;
+  }
+  body.dark .options {
+    bottom: 0px;
+  }
+  .options__text:hover {
+    cursor: pointer;
+    color: hsl(235deg, 21%, 11%);
+  }
+  body.dark .options__text:hover {
+    color: hsl(234deg, 39%, 85%);
+  }
+  .footer {
+    padding-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+@media only screen and (min-width: 1366px) {
+  .root{
+    body.dark &{
+        background-color: $Very-Dark-Blue;
+        height: 100vh;
+    }
+}
+  .header {
+    background-image: url("/images/bg-desktop-light.jpg");
+    padding: 70px 420px;
+    height: 250px;
+    body.dark & {
+      background-image: url("/images/bg-desktop-dark.jpg");
+    }
+    &__create-todos {
+      margin-top: 50px;
+    }
+    &__icon {
+      cursor: pointer;
+    }
+  }
+  .todos-all {
+    width: 38%;
+  }
+  .todo {
+    cursor: pointer;
+    &__radio:hover {
+      background-image: linear-gradient(
+        to bottom,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+      );
+    }
+    &__icon-delete:hover {
+      cursor: pointer;
+    }
+  }
+  .todos-options {
+    font-weight: 700;
+    
+    &__clear:hover {
+      cursor: pointer;
+      color: $Very-Dark-Blue;
+    }
+    body.dark &__clear:hover {
+      color: $Light-Grayish-Blue;
+    }
+  }
+  .options {
+    width: 0;
+    position: absolute;
+    left: 240px;
+    bottom: 0;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-bottom: 0;
+    body.dark & {
+      bottom: 0px;
+    }
+    &__text:hover {
+      cursor: pointer;
+      color: $Very-Dark-Blue;
+    }
+    body.dark &__text:hover {
+      color: $Light-Grayish-Blue;
+    }
+
+  }
+  .footer {
+    padding-top: 0px;
+  }
+}

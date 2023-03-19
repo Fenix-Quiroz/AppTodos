@@ -1,0 +1,198 @@
+.root{
+    body.dark &{
+        background-color: $Very-Dark-Blue;
+        height: 100vh;
+    }
+}
+.header{
+    background-image: url('../images/bg-mobile-light.jpg');
+    background-size: cover;
+    padding: 45px 20px;
+    height: 200px;
+    min-width: 375;
+    transition: .3s ease-in-out;
+    body.dark &{
+        background-image: url('../images/bg-mobile-dark.jpg');
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        color: $very-light-gray;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 14px;
+        font-size: 1.3em;
+    }
+    &__icon{
+        width: 20px;
+         
+    }
+
+    &__create-todos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $very-light-gray;
+        margin-top: 30px;
+        padding-left: 20px;
+        border-radius: 5px;
+        body.dark &{
+            background-color: $Very-Dark-Desaturated-Blue;
+        }
+        &--text{
+            width: 100%;
+            padding-left: 30px;
+            border: none;
+            outline: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 5px;  
+            body.dark &{
+                background-color: $Very-Dark-Desaturated-Blue;
+                color: $Light-Grayish-Blue;
+            }
+        }
+        &--radio {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid $light-grayish-blue;
+            cursor: pointer;
+            body.dark &{
+                background-color: $Very-Dark-Desaturated-Blue;
+                border: 1px solid  $Very-Dark-Grayish-Blue-a;
+            }
+        }
+        &--icon{
+            font-size: 1.6em;   
+            color: hsl(280, 87%, 65%);
+            cursor: pointer;
+            background-color: $Very-Dark-Blue;
+            border-radius: 50%;
+            margin-right: 2px;
+            padding: 5px 10px;
+            text-align: center;
+        }
+       
+    }
+    
+}
+
+.main{
+    background-color: $very-light-gray;   
+    body.dark &{
+        background-color: $Very-Dark-Blue;
+        width: 100%;
+    }
+}
+.todos-all{
+    width: 90%;
+    margin: auto;
+    position: relative;
+     bottom:  30px;
+    background-color: $very-light-gray;
+    box-shadow: 0 10px 20px 0 $light-grayish-blue;
+    border-radius: 5px;
+    body.dark &{
+        background-color: $Very-Dark-Desaturated-Blue;
+        box-shadow: none;
+    }
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid $light-grayish-blue;
+    body.dark &{
+        border-bottom: 1px solid $Very-Dark-Grayish-Blue-a;
+    }
+    
+    &__options{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    &__radio{
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        border: 1px solid $light-grayish-blue;
+        cursor: pointer;
+        //background-image: linear-gradient( to bottom , hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        body.dark &{
+            background-color: $Very-Dark-Desaturated-Blue;
+            border: 1px solid  $Very-Dark-Grayish-Blue-a;
+        }
+    }
+    &__check{
+        position: relative;
+        right: 26px;
+    }
+    &__text{
+        font-size: 14px;
+       // text-decoration: line-through;
+        //color: $Dark-Grayish-Blue;
+        body.dark &{
+            color: $Light-Grayish-Blue;
+        }
+    }
+    &__icon-delete{
+        width: 13px;
+    }
+}
+
+.todos-options{
+     display: flex;
+     justify-content: space-between;
+     padding: 15px 20px;
+     font-size: 14px;
+     color: $Dark-Grayish-Blue;
+     
+}
+.options{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: $very-light-gray;
+    box-shadow: 0 0px 130px 0 $light-grayish-blue;
+    padding: 15px 0;
+    margin-top: -10px;
+    border-radius: 5px;
+    color: $Dark-Grayish-Blue;
+    font-size: 16px;
+    font-weight: 700;
+
+    body.dark &{
+        background-color: $Very-Dark-Desaturated-Blue;
+        box-shadow: none;
+    }
+  
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $Dark-Grayish-Blue;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    
+     body.dark &{
+        background-color: $Very-Dark-Blue;
+     }
+}
+.active{
+    color: $Bright-Blue;
+}
+.disabled{
+    display: none;
+} 
+
