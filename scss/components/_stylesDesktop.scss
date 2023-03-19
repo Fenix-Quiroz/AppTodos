@@ -6,11 +6,11 @@
     }
 }
   .header {
-    background-image: url("/images/bg-desktop-light.jpg");
+    background-image: url("../images/bg-desktop-light.jpg");
     padding: 70px 420px;
     height: 250px;
     body.dark & {
-      background-image: url("/images/bg-desktop-dark.jpg");
+      background-image: url("../images/bg-desktop-dark.jpg");
     }
     &__create-todos {
       margin-top: 50px;
@@ -39,7 +39,7 @@
     font-weight: 700;
     
     &__clear:hover {
-      cursor: pointer;
+      cursor: pointer; 
       color: $Very-Dark-Blue;
     }
     body.dark &__clear:hover {

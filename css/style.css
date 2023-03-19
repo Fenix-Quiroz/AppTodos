@@ -209,12 +209,12 @@ body.dark .footer {
     height: 100vh;
   }
   .header {
-    background-image: url("/images/bg-desktop-light.jpg");
+    background-image: url("../images/bg-desktop-light.jpg");
     padding: 70px 420px;
     height: 250px;
   }
   body.dark .header {
-    background-image: url("/images/bg-desktop-dark.jpg");
+    background-image: url("../images/bg-desktop-dark.jpg");
   }
   .header__create-todos {
     margin-top: 50px;
